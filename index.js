@@ -57,7 +57,7 @@ let text = 'welcome webbrain';
 text=text.repeat(5);
 
 function weSanagich(text){
-    var index = parseInt(text.indexOf("we")); 
+    var index = text.indexOf("we"); 
     weCount++;
     text=text.slice(index+2);
     text.includes('we') && weSanagich(text);
@@ -65,7 +65,7 @@ function weSanagich(text){
 weSanagich(text);
 
 function a_Sanagich(text){
-    var index = parseInt(text.indexOf("a")); 
+    var index = text.indexOf("a"); 
     aCount++;
     text=text.slice(index+1);
     text.includes('a') && a_Sanagich(text);
@@ -73,7 +73,7 @@ function a_Sanagich(text){
 a_Sanagich(text);
 
 function b_Sanagich(text){
-    var index = parseInt(text.indexOf("b")); 
+    var index = text.indexOf("b"); 
     bCount++;
     text=text.slice(index+1);
     text.includes('b') && b_Sanagich(text);
